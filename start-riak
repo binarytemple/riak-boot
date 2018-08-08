@@ -1,9 +1,10 @@
 function run_riak() {
 NUM=$1
 docker run -d \
+  -ti \
   --rm \
-  -it \
-  --name "riak-dev${NUM}" \
+  --name "riak-dev${NUM}.riak" \
+  --hostname "riak-dev${NUM}.riak" \
   --network riak \
   -p 100${NUM}8:8098 \
   -p 100${NUM}7:8087 \

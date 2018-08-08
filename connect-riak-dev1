@@ -1,1 +1,1 @@
-docker exec -ti riak-dev1 bash
+docker exec -ti riak-dev1.riak bash
