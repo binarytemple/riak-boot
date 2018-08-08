@@ -1,0 +1,3 @@
+docker kill riak-dev1
+docker kill riak-dev2
+docker kill riak-dev3

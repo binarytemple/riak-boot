@@ -3,7 +3,7 @@ NUM=$1
 docker run -d \
   --rm \
   -it \
-  --name "dev${NUM}" \
+  --name "riak-dev${NUM}" \
   --network riak \
   -p 100${NUM}8:8098 \
   -p 100${NUM}7:8087 \
