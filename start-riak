@@ -10,7 +10,7 @@ docker run -d \
   -p 100${NUM}7:8087 \
   -v $(pwd)/dev${NUM}-etc:/etc/riak \
   --mount type=bind,source="$(pwd)/dev${NUM}-scratch",target=/scratch \
-  bryanhuntesl/riak-centos7:2.2.6-OTP_R16B02_basho10 riak console
+  freeakdb/riak-centos7:2.2.6-OTP_R16B02_basho10 riak console
 }
 
 run_riak 1
